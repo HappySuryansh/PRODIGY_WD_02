@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Animated Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container glass">
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00.00</div>
+    <div class="controls">
+      <button id="startPause">Start</button>
+      <button id="reset">Reset</button>
+      <button id="lap">Lap</button>
+    </div>
+    <p id="lapName" placeholder="Enter lap name..." >
+    <ul id="laps"></ul>
+    <div class="stats">
+      <p><strong>Total Time:</strong> <span id="totalTime">00:00:00.00</span></p>
+      <p><strong>Best Lap:</strong> <span id="bestLap">--</span></p>
+      <p><strong>Average Lap:</strong> <span id="avgLap">--</span></p>
+      <p><strong>Total Laps:</strong> <span id="lapCount">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
